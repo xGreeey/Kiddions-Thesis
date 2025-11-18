@@ -1,0 +1,721 @@
+industry_id,batch,year,student_count
+2Go Travel,1,2010,1
+2Go Travel,2,2010,3
+2Go Travel,3,2010,9
+AXN,1,2010,6
+AXN,2,2010,27
+AXN,3,2010,6
+All About Chicken Inc.,1,2010,30
+All About Chicken Inc.,2,2010,23
+All About Chicken Inc.,3,2010,29
+ColdAire Industries,1,2010,9
+ColdAire Industries,2,2010,8
+ColdAire Industries,3,2010,29
+EVENTS MANAGEMENT SERVICES,1,2010,19
+EVENTS MANAGEMENT SERVICES,2,2010,26
+EVENTS MANAGEMENT SERVICES,3,2010,29
+Edsa Shangri-La,1,2010,13
+Edsa Shangri-La,2,2010,3
+Edsa Shangri-La,3,2010,11
+Goldilocks Bakeshop,1,2010,29
+Goldilocks Bakeshop,2,2010,21
+Goldilocks Bakeshop,3,2010,21
+Lancaster Hotel,1,2010,9
+Lancaster Hotel,2,2010,9
+Lancaster Hotel,3,2010,12
+Marvel One,1,2010,6
+Marvel One,2,2010,2
+Marvel One,3,2010,8
+Onesimus,1,2010,1
+Onesimus,2,2010,18
+Onesimus,3,2010,12
+PVL Food Center,1,2010,28
+PVL Food Center,2,2010,1
+PVL Food Center,3,2010,4
+Rockwell Holdings and Properties,1,2010,28
+Rockwell Holdings and Properties,2,2010,15
+Rockwell Holdings and Properties,3,2010,13
+SM Prime Holdings,1,2010,21
+SM Prime Holdings,2,2010,11
+SM Prime Holdings,3,2010,23
+Sociality Café Incorporated,1,2010,25
+Sociality Café Incorporated,2,2010,11
+Sociality Café Incorporated,3,2010,5
+Tous Le Jous,1,2010,12
+Tous Le Jous,2,2010,29
+Tous Le Jous,3,2010,27
+2Go Travel,1,2011,19
+2Go Travel,2,2011,30
+2Go Travel,3,2011,2
+AXN,1,2011,21
+AXN,2,2011,1
+AXN,3,2011,23
+All About Chicken Inc.,1,2011,10
+All About Chicken Inc.,2,2011,1
+All About Chicken Inc.,3,2011,27
+ColdAire Industries,1,2011,25
+ColdAire Industries,2,2011,24
+ColdAire Industries,3,2011,22
+EVENTS MANAGEMENT SERVICES,1,2011,28
+EVENTS MANAGEMENT SERVICES,2,2011,27
+EVENTS MANAGEMENT SERVICES,3,2011,14
+Edsa Shangri-La,1,2011,16
+Edsa Shangri-La,2,2011,1
+Edsa Shangri-La,3,2011,7
+Goldilocks Bakeshop,1,2011,2
+Goldilocks Bakeshop,2,2011,29
+Goldilocks Bakeshop,3,2011,26
+Lancaster Hotel,1,2011,21
+Lancaster Hotel,2,2011,5
+Lancaster Hotel,3,2011,20
+Marvel One,1,2011,26
+Marvel One,2,2011,10
+Marvel One,3,2011,22
+Onesimus,1,2011,12
+Onesimus,2,2011,5
+Onesimus,3,2011,17
+PVL Food Center,1,2011,16
+PVL Food Center,2,2011,12
+PVL Food Center,3,2011,14
+Rockwell Holdings and Properties,1,2011,5
+Rockwell Holdings and Properties,2,2011,21
+Rockwell Holdings and Properties,3,2011,25
+SM Prime Holdings,1,2011,29
+SM Prime Holdings,2,2011,2
+SM Prime Holdings,3,2011,22
+Sociality Café Incorporated,1,2011,3
+Sociality Café Incorporated,2,2011,7
+Sociality Café Incorporated,3,2011,28
+Tous Le Jous,1,2011,5
+Tous Le Jous,2,2011,27
+Tous Le Jous,3,2011,11
+2Go Travel,1,2012,9
+2Go Travel,2,2012,11
+2Go Travel,3,2012,11
+AXN,1,2012,12
+AXN,2,2012,30
+AXN,3,2012,12
+All About Chicken Inc.,1,2012,10
+All About Chicken Inc.,2,2012,4
+All About Chicken Inc.,3,2012,2
+ColdAire Industries,1,2012,3
+ColdAire Industries,2,2012,12
+ColdAire Industries,3,2012,19
+EVENTS MANAGEMENT SERVICES,1,2012,27
+EVENTS MANAGEMENT SERVICES,2,2012,16
+EVENTS MANAGEMENT SERVICES,3,2012,16
+Edsa Shangri-La,1,2012,1
+Edsa Shangri-La,2,2012,24
+Edsa Shangri-La,3,2012,7
+Goldilocks Bakeshop,1,2012,29
+Goldilocks Bakeshop,2,2012,11
+Goldilocks Bakeshop,3,2012,1
+Lancaster Hotel,1,2012,24
+Lancaster Hotel,2,2012,11
+Lancaster Hotel,3,2012,4
+Marvel One,1,2012,14
+Marvel One,2,2012,29
+Marvel One,3,2012,15
+Onesimus,1,2012,26
+Onesimus,2,2012,17
+Onesimus,3,2012,28
+PVL Food Center,1,2012,6
+PVL Food Center,2,2012,19
+PVL Food Center,3,2012,9
+Rockwell Holdings and Properties,1,2012,30
+Rockwell Holdings and Properties,2,2012,19
+Rockwell Holdings and Properties,3,2012,1
+SM Prime Holdings,1,2012,21
+SM Prime Holdings,2,2012,12
+SM Prime Holdings,3,2012,21
+Sociality Café Incorporated,1,2012,28
+Sociality Café Incorporated,2,2012,28
+Sociality Café Incorporated,3,2012,16
+Tous Le Jous,1,2012,16
+Tous Le Jous,2,2012,16
+Tous Le Jous,3,2012,17
+2Go Travel,1,2013,19
+2Go Travel,2,2013,7
+2Go Travel,3,2013,7
+AXN,1,2013,28
+AXN,2,2013,13
+AXN,3,2013,30
+All About Chicken Inc.,1,2013,6
+All About Chicken Inc.,2,2013,28
+All About Chicken Inc.,3,2013,14
+ColdAire Industries,1,2013,9
+ColdAire Industries,2,2013,5
+ColdAire Industries,3,2013,11
+EVENTS MANAGEMENT SERVICES,1,2013,23
+EVENTS MANAGEMENT SERVICES,2,2013,23
+EVENTS MANAGEMENT SERVICES,3,2013,8
+Edsa Shangri-La,1,2013,21
+Edsa Shangri-La,2,2013,4
+Edsa Shangri-La,3,2013,16
+Goldilocks Bakeshop,1,2013,18
+Goldilocks Bakeshop,2,2013,8
+Goldilocks Bakeshop,3,2013,16
+Lancaster Hotel,1,2013,7
+Lancaster Hotel,2,2013,16
+Lancaster Hotel,3,2013,30
+Marvel One,1,2013,14
+Marvel One,2,2013,27
+Marvel One,3,2013,28
+Onesimus,1,2013,6
+Onesimus,2,2013,8
+Onesimus,3,2013,30
+PVL Food Center,1,2013,11
+PVL Food Center,2,2013,2
+PVL Food Center,3,2013,28
+Rockwell Holdings and Properties,1,2013,2
+Rockwell Holdings and Properties,2,2013,5
+Rockwell Holdings and Properties,3,2013,23
+SM Prime Holdings,1,2013,15
+SM Prime Holdings,2,2013,21
+SM Prime Holdings,3,2013,7
+Sociality Café Incorporated,1,2013,15
+Sociality Café Incorporated,2,2013,13
+Sociality Café Incorporated,3,2013,1
+Tous Le Jous,1,2013,7
+Tous Le Jous,2,2013,20
+Tous Le Jous,3,2013,8
+2Go Travel,1,2014,22
+2Go Travel,2,2014,29
+2Go Travel,3,2014,8
+AXN,1,2014,29
+AXN,2,2014,8
+AXN,3,2014,14
+All About Chicken Inc.,1,2014,9
+All About Chicken Inc.,2,2014,18
+All About Chicken Inc.,3,2014,27
+ColdAire Industries,1,2014,7
+ColdAire Industries,2,2014,23
+ColdAire Industries,3,2014,18
+EVENTS MANAGEMENT SERVICES,1,2014,17
+EVENTS MANAGEMENT SERVICES,2,2014,12
+EVENTS MANAGEMENT SERVICES,3,2014,8
+Edsa Shangri-La,1,2014,5
+Edsa Shangri-La,2,2014,13
+Edsa Shangri-La,3,2014,8
+Goldilocks Bakeshop,1,2014,12
+Goldilocks Bakeshop,2,2014,16
+Goldilocks Bakeshop,3,2014,5
+Lancaster Hotel,1,2014,6
+Lancaster Hotel,2,2014,29
+Lancaster Hotel,3,2014,20
+Marvel One,1,2014,23
+Marvel One,2,2014,5
+Marvel One,3,2014,5
+Onesimus,1,2014,7
+Onesimus,2,2014,17
+Onesimus,3,2014,25
+PVL Food Center,1,2014,27
+PVL Food Center,2,2014,17
+PVL Food Center,3,2014,25
+Rockwell Holdings and Properties,1,2014,18
+Rockwell Holdings and Properties,2,2014,11
+Rockwell Holdings and Properties,3,2014,30
+SM Prime Holdings,1,2014,13
+SM Prime Holdings,2,2014,15
+SM Prime Holdings,3,2014,27
+Sociality Café Incorporated,1,2014,15
+Sociality Café Incorporated,2,2014,13
+Sociality Café Incorporated,3,2014,18
+Tous Le Jous,1,2014,15
+Tous Le Jous,2,2014,29
+Tous Le Jous,3,2014,26
+2Go Travel,1,2015,9
+2Go Travel,2,2015,30
+2Go Travel,3,2015,23
+AXN,1,2015,30
+AXN,2,2015,24
+AXN,3,2015,2
+All About Chicken Inc.,1,2015,24
+All About Chicken Inc.,2,2015,1
+All About Chicken Inc.,3,2015,26
+ColdAire Industries,1,2015,30
+ColdAire Industries,2,2015,11
+ColdAire Industries,3,2015,13
+EVENTS MANAGEMENT SERVICES,1,2015,20
+EVENTS MANAGEMENT SERVICES,2,2015,23
+EVENTS MANAGEMENT SERVICES,3,2015,1
+Edsa Shangri-La,1,2015,6
+Edsa Shangri-La,2,2015,3
+Edsa Shangri-La,3,2015,15
+Goldilocks Bakeshop,1,2015,19
+Goldilocks Bakeshop,2,2015,30
+Goldilocks Bakeshop,3,2015,20
+Lancaster Hotel,1,2015,1
+Lancaster Hotel,2,2015,1
+Lancaster Hotel,3,2015,25
+Marvel One,1,2015,26
+Marvel One,2,2015,7
+Marvel One,3,2015,19
+Onesimus,1,2015,16
+Onesimus,2,2015,27
+Onesimus,3,2015,22
+PVL Food Center,1,2015,2
+PVL Food Center,2,2015,7
+PVL Food Center,3,2015,10
+Rockwell Holdings and Properties,1,2015,30
+Rockwell Holdings and Properties,2,2015,13
+Rockwell Holdings and Properties,3,2015,13
+SM Prime Holdings,1,2015,11
+SM Prime Holdings,2,2015,9
+SM Prime Holdings,3,2015,22
+Sociality Café Incorporated,1,2015,15
+Sociality Café Incorporated,2,2015,8
+Sociality Café Incorporated,3,2015,21
+Tous Le Jous,1,2015,6
+Tous Le Jous,2,2015,10
+Tous Le Jous,3,2015,2
+2Go Travel,1,2016,28
+2Go Travel,2,2016,21
+2Go Travel,3,2016,5
+AXN,1,2016,27
+AXN,2,2016,25
+AXN,3,2016,6
+All About Chicken Inc.,1,2016,9
+All About Chicken Inc.,2,2016,18
+All About Chicken Inc.,3,2016,23
+ColdAire Industries,1,2016,15
+ColdAire Industries,2,2016,8
+ColdAire Industries,3,2016,13
+EVENTS MANAGEMENT SERVICES,1,2016,16
+EVENTS MANAGEMENT SERVICES,2,2016,9
+EVENTS MANAGEMENT SERVICES,3,2016,10
+Edsa Shangri-La,1,2016,4
+Edsa Shangri-La,2,2016,19
+Edsa Shangri-La,3,2016,11
+Goldilocks Bakeshop,1,2016,20
+Goldilocks Bakeshop,2,2016,19
+Goldilocks Bakeshop,3,2016,13
+Lancaster Hotel,1,2016,15
+Lancaster Hotel,2,2016,8
+Lancaster Hotel,3,2016,30
+Marvel One,1,2016,17
+Marvel One,2,2016,27
+Marvel One,3,2016,7
+Onesimus,1,2016,29
+Onesimus,2,2016,1
+Onesimus,3,2016,18
+PVL Food Center,1,2016,25
+PVL Food Center,2,2016,19
+PVL Food Center,3,2016,1
+Rockwell Holdings and Properties,1,2016,3
+Rockwell Holdings and Properties,2,2016,14
+Rockwell Holdings and Properties,3,2016,13
+SM Prime Holdings,1,2016,8
+SM Prime Holdings,2,2016,27
+SM Prime Holdings,3,2016,18
+Sociality Café Incorporated,1,2016,8
+Sociality Café Incorporated,2,2016,15
+Sociality Café Incorporated,3,2016,7
+Tous Le Jous,1,2016,16
+Tous Le Jous,2,2016,24
+Tous Le Jous,3,2016,15
+2Go Travel,1,2017,27
+2Go Travel,2,2017,13
+2Go Travel,3,2017,26
+AXN,1,2017,13
+AXN,2,2017,9
+AXN,3,2017,17
+All About Chicken Inc.,1,2017,29
+All About Chicken Inc.,2,2017,20
+All About Chicken Inc.,3,2017,8
+ColdAire Industries,1,2017,19
+ColdAire Industries,2,2017,1
+ColdAire Industries,3,2017,18
+EVENTS MANAGEMENT SERVICES,1,2017,18
+EVENTS MANAGEMENT SERVICES,2,2017,14
+EVENTS MANAGEMENT SERVICES,3,2017,14
+Edsa Shangri-La,1,2017,6
+Edsa Shangri-La,2,2017,25
+Edsa Shangri-La,3,2017,9
+Goldilocks Bakeshop,1,2017,14
+Goldilocks Bakeshop,2,2017,7
+Goldilocks Bakeshop,3,2017,4
+Lancaster Hotel,1,2017,13
+Lancaster Hotel,2,2017,14
+Lancaster Hotel,3,2017,18
+Marvel One,1,2017,1
+Marvel One,2,2017,19
+Marvel One,3,2017,2
+Onesimus,1,2017,7
+Onesimus,2,2017,4
+Onesimus,3,2017,14
+PVL Food Center,1,2017,2
+PVL Food Center,2,2017,22
+PVL Food Center,3,2017,5
+Rockwell Holdings and Properties,1,2017,18
+Rockwell Holdings and Properties,2,2017,3
+Rockwell Holdings and Properties,3,2017,7
+SM Prime Holdings,1,2017,25
+SM Prime Holdings,2,2017,13
+SM Prime Holdings,3,2017,15
+Sociality Café Incorporated,1,2017,21
+Sociality Café Incorporated,2,2017,20
+Sociality Café Incorporated,3,2017,30
+Tous Le Jous,1,2017,6
+Tous Le Jous,2,2017,12
+Tous Le Jous,3,2017,28
+2Go Travel,1,2018,7
+2Go Travel,2,2018,4
+2Go Travel,3,2018,11
+AXN,1,2018,28
+AXN,2,2018,22
+AXN,3,2018,18
+All About Chicken Inc.,1,2018,9
+All About Chicken Inc.,2,2018,29
+All About Chicken Inc.,3,2018,28
+ColdAire Industries,1,2018,2
+ColdAire Industries,2,2018,4
+ColdAire Industries,3,2018,26
+EVENTS MANAGEMENT SERVICES,1,2018,15
+EVENTS MANAGEMENT SERVICES,2,2018,1
+EVENTS MANAGEMENT SERVICES,3,2018,2
+Edsa Shangri-La,1,2018,15
+Edsa Shangri-La,2,2018,11
+Edsa Shangri-La,3,2018,10
+Goldilocks Bakeshop,1,2018,25
+Goldilocks Bakeshop,2,2018,4
+Goldilocks Bakeshop,3,2018,25
+Lancaster Hotel,1,2018,19
+Lancaster Hotel,2,2018,14
+Lancaster Hotel,3,2018,29
+Marvel One,1,2018,17
+Marvel One,2,2018,27
+Marvel One,3,2018,5
+Onesimus,1,2018,11
+Onesimus,2,2018,8
+Onesimus,3,2018,10
+PVL Food Center,1,2018,4
+PVL Food Center,2,2018,26
+PVL Food Center,3,2018,5
+Rockwell Holdings and Properties,1,2018,27
+Rockwell Holdings and Properties,2,2018,26
+Rockwell Holdings and Properties,3,2018,30
+SM Prime Holdings,1,2018,6
+SM Prime Holdings,2,2018,18
+SM Prime Holdings,3,2018,10
+Sociality Café Incorporated,1,2018,26
+Sociality Café Incorporated,2,2018,30
+Sociality Café Incorporated,3,2018,28
+Tous Le Jous,1,2018,13
+Tous Le Jous,2,2018,28
+Tous Le Jous,3,2018,13
+2Go Travel,1,2019,16
+2Go Travel,2,2019,17
+2Go Travel,3,2019,1
+AXN,1,2019,24
+AXN,2,2019,24
+AXN,3,2019,23
+All About Chicken Inc.,1,2019,21
+All About Chicken Inc.,2,2019,14
+All About Chicken Inc.,3,2019,12
+ColdAire Industries,1,2019,8
+ColdAire Industries,2,2019,23
+ColdAire Industries,3,2019,26
+EVENTS MANAGEMENT SERVICES,1,2019,9
+EVENTS MANAGEMENT SERVICES,2,2019,3
+EVENTS MANAGEMENT SERVICES,3,2019,23
+Edsa Shangri-La,1,2019,16
+Edsa Shangri-La,2,2019,22
+Edsa Shangri-La,3,2019,19
+Goldilocks Bakeshop,1,2019,23
+Goldilocks Bakeshop,2,2019,2
+Goldilocks Bakeshop,3,2019,24
+Lancaster Hotel,1,2019,27
+Lancaster Hotel,2,2019,5
+Lancaster Hotel,3,2019,24
+Marvel One,1,2019,15
+Marvel One,2,2019,9
+Marvel One,3,2019,22
+Onesimus,1,2019,15
+Onesimus,2,2019,6
+Onesimus,3,2019,20
+PVL Food Center,1,2019,6
+PVL Food Center,2,2019,9
+PVL Food Center,3,2019,25
+Rockwell Holdings and Properties,1,2019,18
+Rockwell Holdings and Properties,2,2019,29
+Rockwell Holdings and Properties,3,2019,19
+SM Prime Holdings,1,2019,7
+SM Prime Holdings,2,2019,9
+SM Prime Holdings,3,2019,15
+Sociality Café Incorporated,1,2019,26
+Sociality Café Incorporated,2,2019,5
+Sociality Café Incorporated,3,2019,16
+Tous Le Jous,1,2019,21
+Tous Le Jous,2,2019,30
+Tous Le Jous,3,2019,30
+2Go Travel,1,2020,9
+2Go Travel,2,2020,13
+2Go Travel,3,2020,29
+AXN,1,2020,17
+AXN,2,2020,28
+AXN,3,2020,29
+All About Chicken Inc.,1,2020,5
+All About Chicken Inc.,2,2020,6
+All About Chicken Inc.,3,2020,1
+ColdAire Industries,1,2020,19
+ColdAire Industries,2,2020,27
+ColdAire Industries,3,2020,17
+EVENTS MANAGEMENT SERVICES,1,2020,21
+EVENTS MANAGEMENT SERVICES,2,2020,18
+EVENTS MANAGEMENT SERVICES,3,2020,30
+Edsa Shangri-La,1,2020,2
+Edsa Shangri-La,2,2020,24
+Edsa Shangri-La,3,2020,20
+Goldilocks Bakeshop,1,2020,19
+Goldilocks Bakeshop,2,2020,12
+Goldilocks Bakeshop,3,2020,24
+Lancaster Hotel,1,2020,20
+Lancaster Hotel,2,2020,7
+Lancaster Hotel,3,2020,8
+Marvel One,1,2020,18
+Marvel One,2,2020,9
+Marvel One,3,2020,17
+Onesimus,1,2020,23
+Onesimus,2,2020,15
+Onesimus,3,2020,24
+PVL Food Center,1,2020,9
+PVL Food Center,2,2020,19
+PVL Food Center,3,2020,3
+Rockwell Holdings and Properties,1,2020,4
+Rockwell Holdings and Properties,2,2020,7
+Rockwell Holdings and Properties,3,2020,16
+SM Prime Holdings,1,2020,25
+SM Prime Holdings,2,2020,20
+SM Prime Holdings,3,2020,20
+Sociality Café Incorporated,1,2020,11
+Sociality Café Incorporated,2,2020,13
+Sociality Café Incorporated,3,2020,6
+Tous Le Jous,1,2020,27
+Tous Le Jous,2,2020,7
+Tous Le Jous,3,2020,10
+2Go Travel,1,2021,15
+2Go Travel,2,2021,8
+2Go Travel,3,2021,25
+AXN,1,2021,22
+AXN,2,2021,17
+AXN,3,2021,17
+All About Chicken Inc.,1,2021,28
+All About Chicken Inc.,2,2021,11
+All About Chicken Inc.,3,2021,25
+ColdAire Industries,1,2021,16
+ColdAire Industries,2,2021,6
+ColdAire Industries,3,2021,27
+EVENTS MANAGEMENT SERVICES,1,2021,24
+EVENTS MANAGEMENT SERVICES,2,2021,24
+EVENTS MANAGEMENT SERVICES,3,2021,8
+Edsa Shangri-La,1,2021,17
+Edsa Shangri-La,2,2021,14
+Edsa Shangri-La,3,2021,15
+Goldilocks Bakeshop,1,2021,3
+Goldilocks Bakeshop,2,2021,12
+Goldilocks Bakeshop,3,2021,30
+Lancaster Hotel,1,2021,13
+Lancaster Hotel,2,2021,2
+Lancaster Hotel,3,2021,4
+Marvel One,1,2021,2
+Marvel One,2,2021,18
+Marvel One,3,2021,26
+Onesimus,1,2021,28
+Onesimus,2,2021,28
+Onesimus,3,2021,1
+PVL Food Center,1,2021,23
+PVL Food Center,2,2021,12
+PVL Food Center,3,2021,16
+Rockwell Holdings and Properties,1,2021,22
+Rockwell Holdings and Properties,2,2021,22
+Rockwell Holdings and Properties,3,2021,9
+SM Prime Holdings,1,2021,20
+SM Prime Holdings,2,2021,25
+SM Prime Holdings,3,2021,13
+Sociality Café Incorporated,1,2021,9
+Sociality Café Incorporated,2,2021,3
+Sociality Café Incorporated,3,2021,6
+Tous Le Jous,1,2021,5
+Tous Le Jous,2,2021,16
+Tous Le Jous,3,2021,5
+2Go Travel,1,2022,8
+2Go Travel,2,2022,20
+2Go Travel,3,2022,9
+AXN,1,2022,14
+AXN,2,2022,21
+AXN,3,2022,20
+All About Chicken Inc.,1,2022,15
+All About Chicken Inc.,2,2022,12
+All About Chicken Inc.,3,2022,16
+ColdAire Industries,1,2022,25
+ColdAire Industries,2,2022,23
+ColdAire Industries,3,2022,3
+EVENTS MANAGEMENT SERVICES,1,2022,1
+EVENTS MANAGEMENT SERVICES,2,2022,13
+EVENTS MANAGEMENT SERVICES,3,2022,13
+Edsa Shangri-La,1,2022,14
+Edsa Shangri-La,2,2022,14
+Edsa Shangri-La,3,2022,23
+Goldilocks Bakeshop,1,2022,22
+Goldilocks Bakeshop,2,2022,26
+Goldilocks Bakeshop,3,2022,13
+Lancaster Hotel,1,2022,26
+Lancaster Hotel,2,2022,15
+Lancaster Hotel,3,2022,14
+Marvel One,1,2022,13
+Marvel One,2,2022,15
+Marvel One,3,2022,11
+Onesimus,1,2022,2
+Onesimus,2,2022,1
+Onesimus,3,2022,28
+PVL Food Center,1,2022,15
+PVL Food Center,2,2022,18
+PVL Food Center,3,2022,4
+Rockwell Holdings and Properties,1,2022,11
+Rockwell Holdings and Properties,2,2022,9
+Rockwell Holdings and Properties,3,2022,19
+SM Prime Holdings,1,2022,10
+SM Prime Holdings,2,2022,11
+SM Prime Holdings,3,2022,29
+Sociality Café Incorporated,1,2022,1
+Sociality Café Incorporated,2,2022,10
+Sociality Café Incorporated,3,2022,29
+Tous Le Jous,1,2022,29
+Tous Le Jous,2,2022,13
+Tous Le Jous,3,2022,22
+2Go Travel,1,2023,12
+2Go Travel,2,2023,18
+2Go Travel,3,2023,26
+AXN,1,2023,12
+AXN,2,2023,5
+AXN,3,2023,5
+All About Chicken Inc.,1,2023,22
+All About Chicken Inc.,2,2023,19
+All About Chicken Inc.,3,2023,7
+ColdAire Industries,1,2023,29
+ColdAire Industries,2,2023,30
+ColdAire Industries,3,2023,6
+EVENTS MANAGEMENT SERVICES,1,2023,18
+EVENTS MANAGEMENT SERVICES,2,2023,25
+EVENTS MANAGEMENT SERVICES,3,2023,20
+Edsa Shangri-La,1,2023,1
+Edsa Shangri-La,2,2023,12
+Edsa Shangri-La,3,2023,10
+Goldilocks Bakeshop,1,2023,4
+Goldilocks Bakeshop,2,2023,17
+Goldilocks Bakeshop,3,2023,25
+Lancaster Hotel,1,2023,6
+Lancaster Hotel,2,2023,9
+Lancaster Hotel,3,2023,19
+Marvel One,1,2023,13
+Marvel One,2,2023,20
+Marvel One,3,2023,2
+Onesimus,1,2023,8
+Onesimus,2,2023,25
+Onesimus,3,2023,2
+PVL Food Center,1,2023,17
+PVL Food Center,2,2023,2
+PVL Food Center,3,2023,2
+Rockwell Holdings and Properties,1,2023,10
+Rockwell Holdings and Properties,2,2023,9
+Rockwell Holdings and Properties,3,2023,9
+SM Prime Holdings,1,2023,17
+SM Prime Holdings,2,2023,18
+SM Prime Holdings,3,2023,27
+Sociality Café Incorporated,1,2023,23
+Sociality Café Incorporated,2,2023,17
+Sociality Café Incorporated,3,2023,11
+Tous Le Jous,1,2023,25
+Tous Le Jous,2,2023,8
+Tous Le Jous,3,2023,17
+2Go Travel,1,2024,13
+2Go Travel,2,2024,5
+2Go Travel,3,2024,3
+AXN,1,2024,11
+AXN,2,2024,4
+AXN,3,2024,4
+All About Chicken Inc.,1,2024,15
+All About Chicken Inc.,2,2024,10
+All About Chicken Inc.,3,2024,1
+ColdAire Industries,1,2024,10
+ColdAire Industries,2,2024,4
+ColdAire Industries,3,2024,20
+EVENTS MANAGEMENT SERVICES,1,2024,22
+EVENTS MANAGEMENT SERVICES,2,2024,25
+EVENTS MANAGEMENT SERVICES,3,2024,29
+Edsa Shangri-La,1,2024,13
+Edsa Shangri-La,2,2024,6
+Edsa Shangri-La,3,2024,11
+Goldilocks Bakeshop,1,2024,13
+Goldilocks Bakeshop,2,2024,29
+Goldilocks Bakeshop,3,2024,16
+Lancaster Hotel,1,2024,7
+Lancaster Hotel,2,2024,27
+Lancaster Hotel,3,2024,16
+Marvel One,1,2024,21
+Marvel One,2,2024,19
+Marvel One,3,2024,10
+Onesimus,1,2024,9
+Onesimus,2,2024,4
+Onesimus,3,2024,20
+PVL Food Center,1,2024,7
+PVL Food Center,2,2024,30
+PVL Food Center,3,2024,28
+Rockwell Holdings and Properties,1,2024,22
+Rockwell Holdings and Properties,2,2024,22
+Rockwell Holdings and Properties,3,2024,1
+SM Prime Holdings,1,2024,18
+SM Prime Holdings,2,2024,22
+SM Prime Holdings,3,2024,27
+Sociality Café Incorporated,1,2024,7
+Sociality Café Incorporated,2,2024,12
+Sociality Café Incorporated,3,2024,17
+Tous Le Jous,1,2024,6
+Tous Le Jous,2,2024,6
+Tous Le Jous,3,2024,19
+2Go Travel,1,2025,20
+2Go Travel,2,2025,18
+2Go Travel,3,2025,5
+AXN,1,2025,18
+AXN,2,2025,7
+AXN,3,2025,25
+All About Chicken Inc.,1,2025,10
+All About Chicken Inc.,2,2025,2
+All About Chicken Inc.,3,2025,16
+ColdAire Industries,1,2025,23
+ColdAire Industries,2,2025,24
+ColdAire Industries,3,2025,24
+EVENTS MANAGEMENT SERVICES,1,2025,13
+EVENTS MANAGEMENT SERVICES,2,2025,14
+EVENTS MANAGEMENT SERVICES,3,2025,2
+Edsa Shangri-La,1,2025,24
+Edsa Shangri-La,2,2025,20
+Edsa Shangri-La,3,2025,10
+Goldilocks Bakeshop,1,2025,6
+Goldilocks Bakeshop,2,2025,12
+Goldilocks Bakeshop,3,2025,12
+Lancaster Hotel,1,2025,17
+Lancaster Hotel,2,2025,18
+Lancaster Hotel,3,2025,27
+Marvel One,1,2025,17
+Marvel One,2,2025,17
+Marvel One,3,2025,2
+Onesimus,1,2025,27
+Onesimus,2,2025,14
+Onesimus,3,2025,20
+PVL Food Center,1,2025,14
+PVL Food Center,2,2025,22
+PVL Food Center,3,2025,18
+Rockwell Holdings and Properties,1,2025,7
+Rockwell Holdings and Properties,2,2025,23
+Rockwell Holdings and Properties,3,2025,23
+SM Prime Holdings,1,2025,20
+SM Prime Holdings,2,2025,20
+SM Prime Holdings,3,2025,9
+Sociality Café Incorporated,1,2025,30
+Sociality Café Incorporated,2,2025,30
+Sociality Café Incorporated,3,2025,29
+Tous Le Jous,1,2025,12
+Tous Le Jous,2,2025,26
+Tous Le Jous,3,2025,26

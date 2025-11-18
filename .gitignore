@@ -1,0 +1,10 @@
+# Local environment files (do not commit secrets)
+.env
+.env.*
+
+# Logs
+error.log
+logs/*.log
+
+# Vendor (if you prefer not to commit dependencies)
+# /vendor/

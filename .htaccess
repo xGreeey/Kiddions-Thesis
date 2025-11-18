@@ -1,0 +1,162 @@
+<IfModule mod_headers.c>
+    # Strip identifying headers
+    Header always unset X-Powered-By
+    Header always unset X-Powered-By-Plesk
+    Header always unset X-AspNet-Version
+
+    # Core security headers for ALL responses (PHP and static)
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), camera=(), microphone=(), payment=()"
+
+    # HSTS (HTTPS only). Enable only when site is fully on HTTPS.
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+    # Ensure no legacy Report-Only header overrides our enforced CSP
+    Header always unset Content-Security-Policy-Report-Only
+
+</IfModule>
+
+# Strict CSP for specific static files (no inline/script usage)
+<IfModule mod_headers.c>
+    <Files "favicon.ico">
+        Header set Content-Security-Policy "default-src 'none'; script-src 'none'; style-src 'none'; img-src 'self'; connect-src 'none'; font-src 'none'; media-src 'none'; manifest-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    </Files>
+    <Files "sitemap.xml">
+        Header set Content-Security-Policy "default-src 'none'; script-src 'none'; style-src 'none'; img-src 'none'; connect-src 'none'; font-src 'none'; media-src 'none'; manifest-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    </Files>
+    <Files "robots.txt">
+        Header set Content-Security-Policy "default-src 'none'; script-src 'none'; style-src 'none'; img-src 'none'; connect-src 'none'; font-src 'none'; media-src 'none'; manifest-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    </Files>
+</IfModule>
+
+# Attach strict CSP to Cloudflare email protection endpoint
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_URI} ^/cdn-cgi/email-protection$ [NC]
+    RewriteRule ^ - [E=CSP_CLOUDFLARE:1]
+</IfModule>
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "default-src 'none'; script-src 'none'; style-src 'none'; img-src 'self'; connect-src 'none'; font-src 'none'; media-src 'none'; manifest-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests" env=CSP_CLOUDFLARE
+</IfModule>
+# CSP is now handled by PHP security/csp.php - remove conflicting headers
+# Ensure nosniff is present for static types even if server skips global header
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|xml|png|jpe?g|gif|ico|svg|txt)$">
+        Header set X-Content-Type-Options "nosniff"
+    </FilesMatch>
+</IfModule>
+
+# Reduce timestamp disclosure via caching headers
+FileETag None
+<IfModule mod_headers.c>
+    Header unset ETag
+    Header unset Last-Modified
+</IfModule>
+
+# Disable PHP exposure of X-Powered-By (if supported by host)
+<IfModule mod_php7.c>
+    php_flag expose_php Off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag expose_php Off
+</IfModule>
+
+
+RewriteEngine On
+RewriteBase /
+
+# Enforce HTTPS for all requests (behind proxy/CDN aware)
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Clean URL routing with explicit allow flag to avoid false 403s on LiteSpeed
+# When these routes match, we set ALLOW_PHP=1 so later deny rules are skipped
+RewriteRule ^home/?$ index.php [L,E=ALLOW_PHP:1]
+RewriteRule ^home\?id=([a-zA-Z0-9]+)$ index.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+
+# Dashboard routes with parameters
+RewriteRule ^dashboard/?$ student_dashboard.php [L,E=ALLOW_PHP:1]
+RewriteRule ^dashboard\?id=([a-zA-Z0-9]+)$ student_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^dashboard/([a-zA-Z0-9]+)/?$ student_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+
+RewriteRule ^admin/?$ admin_dashboard.php [L,E=ALLOW_PHP:1]
+RewriteRule ^admin\?id=([a-zA-Z0-9]+)$ admin_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^admin/([a-zA-Z0-9]+)/?$ admin_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+
+RewriteRule ^instructor/?$ instructors_dashboard.php [L,E=ALLOW_PHP:1]
+RewriteRule ^instructor\?id=([a-zA-Z0-9]+)$ instructors_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^instructor/([a-zA-Z0-9]+)/?$ instructors_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+
+# Profile routes with parameters
+RewriteRule ^profile/?$ apis/student_profile.php [L,E=ALLOW_PHP:1]
+RewriteRule ^profile\?id=([a-zA-Z0-9]+)$ apis/student_profile.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^profile/([a-zA-Z0-9]+)/?$ apis/student_profile.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+
+# Grade management with parameters
+RewriteRule ^grades/?$ grade_management.php [L,E=ALLOW_PHP:1]
+RewriteRule ^grades\?id=([a-zA-Z0-9]+)$ grade_management.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^grades/([a-zA-Z0-9]+)/?$ grade_management.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+
+# Obfuscated security routes (maintain existing security)
+RewriteRule ^EKtJkWrAVAsyyA4fbj1KOrcYulJ2Wu$ login_users_mmtvtc.php [L,E=ALLOW_PHP:1]
+RewriteRule ^otp$ otpforusers/verify_email_otp.php [L,E=ALLOW_PHP:1]
+RewriteRule ^xVfS8QRMPpYRWvilIcyFLnKWgPy5Zw$ verify_email.php [L,E=ALLOW_PHP:1]
+RewriteRule ^vdbZscYYEJbqotvNnWlyA8I1gwfpcH$ email_verification_pending.php [L,E=ALLOW_PHP:1]
+RewriteRule ^aKVeZ02vR7CTx28Jylr5FVaRxVFHzg$ forgot_password.php [L,E=ALLOW_PHP:1]
+RewriteRule ^nsZLoj1b49kcshf6JhimM3Tvdn1rLK$ create_pass.php [L,E=ALLOW_PHP:1]
+RewriteRule ^resetpassword$ reset_pass.php [L,E=ALLOW_PHP:1]
+
+# Note: We no longer block direct .php access here to avoid false 403s on LiteSpeed.
+# Clean routes above will be preferred; direct .php access will still work if referenced.
+
+# Redirect old PHP URLs to clean URLs (temporary for transition)
+RewriteCond %{THE_REQUEST} student_dashboard\.php [NC]
+RewriteRule ^student_dashboard\.php$ /dashboard [R=301,L]
+RewriteCond %{THE_REQUEST} admin_dashboard\.php [NC]
+RewriteRule ^admin_dashboard\.php$ /admin [R=301,L]
+RewriteCond %{THE_REQUEST} instructors_dashboard\.php [NC]
+RewriteRule ^instructors_dashboard\.php$ /instructor [R=301,L]
+
+
+# API routes with parameters
+RewriteRule ^api/notifications/?$ notifications_handler.php [L]
+RewriteRule ^api/notifications\?id=([a-zA-Z0-9]+)$ notifications_handler.php?id=$1 [L,QSA]
+RewriteRule ^api/notifications/([a-zA-Z0-9]+)/?$ notifications_handler.php?id=$1 [L,QSA]
+
+RewriteRule ^api/announcements/?$ apis/announcement_handler.php [L]
+RewriteRule ^api/announcements\?id=([a-zA-Z0-9]+)$ apis/announcement_handler.php?id=$1 [L,QSA]
+RewriteRule ^api/announcements/([a-zA-Z0-9]+)/?$ apis/announcement_handler.php?id=$1 [L,QSA]
+
+RewriteRule ^api/jobs/?$ apis/jobs_handler.php [L]
+RewriteRule ^api/jobs\?id=([a-zA-Z0-9]+)$ apis/jobs_handler.php?id=$1 [L,QSA]
+RewriteRule ^api/jobs/([a-zA-Z0-9]+)/?$ apis/jobs_handler.php?id=$1 [L,QSA]
+
+# Trainee APIs
+RewriteRule ^api/trainee/?$ apis/trainee_handler.php [L]
+RewriteRule ^api/trainee\?id=([a-zA-Z0-9]+)$ apis/trainee_handler.php?id=$1 [L,QSA]
+RewriteRule ^api/trainee/([a-zA-Z0-9]+)/?$ apis/trainee_handler.php?id=$1 [L,QSA]
+
+# Security: Block access to sensitive directories
+RewriteRule ^(security|logs|vendor|PHPMailer)/ - [F,L]
+
+# Custom error pages
+ErrorDocument 404 /home
+ErrorDocument 403 /home
+
+# Deny access to error.log and common sensitive files
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+<Files "error.log">
+    Require all denied
+</Files>
+<FilesMatch "(?i)\.(log|sql|bak|env|ini|zip|tar|gz)$">
+    Require all denied
+</FilesMatch>
+<IfModule mod_authz_core.c>
+    <DirectoryMatch ".*/logs/?$">
+        Require all denied
+    </DirectoryMatch>
+</IfModule>
