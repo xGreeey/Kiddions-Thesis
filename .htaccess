@@ -100,7 +100,7 @@ RewriteRule ^grades\?id=([a-zA-Z0-9]+)$ grade_management.php?id=$1 [L,QSA,E=ALLO
 RewriteRule ^grades/([a-zA-Z0-9]+)/?$ grade_management.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
 
 # Obfuscated security routes (maintain existing security)
-RewriteRule ^EKtJkWrAVAsyyA4fbj1KOrcYulJ2Wu$ login_users_mmtvtc.php [L,E=ALLOW_PHP:1]
+RewriteRule ^EKtJkWrAVAsyyA4fbj1KOrcYulJ2Wu$ auth/login_users_mmtvtc.php [L,E=ALLOW_PHP:1]
 RewriteRule ^otp$ otpforusers/verify_email_otp.php [L,E=ALLOW_PHP:1]
 RewriteRule ^xVfS8QRMPpYRWvilIcyFLnKWgPy5Zw$ verify_email.php [L,E=ALLOW_PHP:1]
 RewriteRule ^vdbZscYYEJbqotvNnWlyA8I1gwfpcH$ email_verification_pending.php [L,E=ALLOW_PHP:1]

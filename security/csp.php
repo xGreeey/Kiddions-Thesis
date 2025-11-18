@@ -98,7 +98,7 @@ if (!function_exists('applyContentSecurityPolicy')) {
 
         // Page-specific relaxations
         $scriptName = basename($_SERVER['SCRIPT_NAME'] ?? '');
-        if ($scriptName === 'login_users_mmtvtc.php') {
+        if ($scriptName === 'login_users_mmtvtc.php' || strpos($_SERVER['SCRIPT_NAME'] ?? '', 'auth/login_users_mmtvtc.php') !== false) {
             // Allow Cloudflare Turnstile only on login page
             $cspDirectives['script-src'][] = 'https://challenges.cloudflare.com';
             $cspDirectives['frame-src'][] = 'https://challenges.cloudflare.com';

@@ -81,7 +81,7 @@
         }
         document.addEventListener('DOMContentLoaded', function(){
             var btnA = document.getElementById('logout-btn');
-            var link = document.querySelector('a[href="logout.php"]');
+            var link = document.querySelector('a[href="../auth/logout.php"]');
             if (btnA) { btnA.addEventListener('click', handleLogoutClick, { capture: true }); }
             if (link) { link.addEventListener('click', handleLogoutClick, { capture: true }); }
         });

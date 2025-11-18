@@ -134,7 +134,7 @@
     document.addEventListener('click', function(e){
         try {
             var t = e.target;
-            var direct = (t && t.closest) ? (t.closest('a[href="logout.php"]') || t.closest('[data-logout]') || t.closest('#logoutBtn')) : null;
+            var direct = (t && t.closest) ? (t.closest('a[href="../auth/logout.php"]') || t.closest('a[href="logout.php"]') || t.closest('[data-logout]') || t.closest('#logoutBtn')) : null;
             if (direct) {
                 e.preventDefault();
                 e.stopImmediatePropagation();
@@ -143,7 +143,7 @@
                     localStorage.setItem('logout_timestamp', String(Date.now()));
                     localStorage.removeItem('logout_timestamp');
                 } catch(_) {}
-                window.location.href = 'logout.php';
+                window.location.href = '../auth/logout.php';
             }
         } catch(_) {}
     }, true);

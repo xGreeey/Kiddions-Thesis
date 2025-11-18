@@ -926,7 +926,7 @@
                             <i class="fas fa-moon"></i>
                             <span class="nav-text">Theme</span>
                         </button>
-                        <a href="logout.php" class="footer-btn logout-btn" id="logoutBtn" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                        <a href="../auth/logout.php" class="footer-btn logout-btn" id="logoutBtn" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
                             <i class="fas fa-sign-out-alt"></i>
                             <span class="nav-text">Logout</span>
                         </a>

@@ -19,7 +19,7 @@ $filesToCheck = [
     'dashboard/instructors_dashboard.php', 
     'dashboard/student_dashboard.php',
     'index.php',
-    'login_users_mmtvtc.php',
+    'auth/login_users_mmtvtc.php',
     'forgot_password.php',
     'reset_pass.php',
     'create_pass.php',
