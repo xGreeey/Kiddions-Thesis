@@ -85,13 +85,13 @@ if (isset($_POST['ajax_verify'])) {
 function getRoleBasedRedirect($role) {
 	switch ($role) {
 		case 0:
-			return 'student_dashboard.php';
+			return 'dashboard/student_dashboard.php';
 		case 1:
-			return 'instructors_dashboard.php';
+			return 'dashboard/instructors_dashboard.php';
 		case 2:
-			return 'admin_dashboard.php';
+			return 'dashboard/admin_dashboard.php';
 		default:
-			return 'student_dashboard.php';
+			return 'dashboard/student_dashboard.php';
 	}
 }
 

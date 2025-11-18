@@ -15,9 +15,9 @@ if (!isset($_SESSION['is_role']) || $_SESSION['is_role'] != 2) {
 
 // Files to check for role field usage
 $filesToCheck = [
-    'admin_dashboard.php',
-    'instructors_dashboard.php', 
-    'student_dashboard.php',
+    'dashboard/admin_dashboard.php',
+    'dashboard/instructors_dashboard.php', 
+    'dashboard/student_dashboard.php',
     'index.php',
     'login_users_mmtvtc.php',
     'forgot_password.php',

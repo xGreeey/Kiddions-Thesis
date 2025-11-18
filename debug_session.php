@@ -86,7 +86,7 @@ if ($userRole != 2) {
             <a href="migrate_authorization.php" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">
                 Go to Migration Tool
             </a>
-            <a href="admin_dashboard.php" style="background: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-left: 10px;">
+            <a href="dashboard/admin_dashboard.php" style="background: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; margin-left: 10px;">
                 Go to Admin Dashboard
             </a>
         </div>

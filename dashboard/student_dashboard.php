@@ -153,7 +153,7 @@ if ($currentStudentNumber !== '') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MMTVTC Student Dashboard</title>
-    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="icon" href="../images/logo.png" type="image/png">
     <link rel="stylesheet" href="../CSS/student.css?v=<?php echo urlencode((string)@filemtime(__DIR__."/../CSS/student.css")); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!-- Removed external Chart.js CDN for stricter CSP. Use a local bundle if needed. -->
@@ -638,7 +638,7 @@ if ($currentStudentNumber !== '') {
                 <div class="sidebar-header">
                     <div class="sidebar-brand">
                         <div class="brand-icon">
-                            <img src="images/logo.png" alt="MMTVTC Logo" class="brand-logo-img">
+                            <img src="../images/logo.png" alt="MMTVTC Logo" class="brand-logo-img">
                         </div>
                         <h2 class="brand-text">MMTVTC</h2>
                     </div>
@@ -2830,7 +2830,7 @@ if ($currentStudentNumber !== '') {
                     </div>
                     <div class="hero-content">
                         <div class="hero-logo-container">
-                            <img src="images/logo.png" alt="MMTVTC Logo" class="hero-logo">
+                            <img src="../images/logo.png" alt="MMTVTC Logo" class="hero-logo">
                             <div class="hero-logo-rings">
                                 <div class="ring ring-1"></div>
                                 <div class="ring ring-2"></div>

@@ -24,16 +24,16 @@ if (session_status() === PHP_SESSION_ACTIVE) {
     error_log('INDEX: authenticated visit | role=' . ($_SESSION['is_role'] ?? $_SESSION['user_role'] ?? 'none') . ' | sid=' . session_id());
     $role = $_SESSION['is_role'] ?? $_SESSION['user_role'] ?? null; // 2 = admin (based on handlers)
     if ($role === 2 || $role === '2' || $role === 'admin') {
-      header('Location: admin_dashboard.php');
+      header('Location: dashboard/admin_dashboard.php');
       exit();
     }
     // If there is an instructor role, try to route there
     if ($role === 1 || $role === '1' || $role === 'instructor') {
-      header('Location: instructors_dashboard.php');
+      header('Location: dashboard/instructors_dashboard.php');
       exit();
     }
     // Default to student dashboard when authenticated but no explicit role
-    header('Location: student_dashboard.php');
+    header('Location: dashboard/student_dashboard.php');
     exit();
   }
 }

@@ -139,7 +139,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Instructors Dashboard</title>
-        <link rel="icon" href="images/logo.png" type="image/png">
+        <link rel="icon" href="../images/logo.png" type="image/png">
 
         <!-- External CSS -->
         <!-- Removed external CSS CDNs for stricter CSP; relying on local CSS only -->
@@ -870,7 +870,7 @@
                     <div class="sidebar-header">
                         <div class="sidebar-brand">
                             <div class="brand-icon">
-                                <img src="images/logo.png" alt="MMTVTC Logo" class="brand-logo-img">
+                                <img src="../images/logo.png" alt="MMTVTC Logo" class="brand-logo-img">
                             </div>
                             <h2 class="brand-text">MMTVTC</h2>
                         </div>
@@ -2703,7 +2703,7 @@
                             </div>
                             <div class="hero-content">
                                 <div class="hero-logo-container">
-                                    <img src="images/logo.png" alt="MMTVTC Logo" class="hero-logo">
+                                    <img src="../images/logo.png" alt="MMTVTC Logo" class="hero-logo">
                                     <div class="hero-logo-rings">
                                         <div class="ring ring-1"></div>
                                         <div class="ring ring-2"></div>

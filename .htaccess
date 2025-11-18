@@ -77,17 +77,17 @@ RewriteRule ^home/?$ index.php [L,E=ALLOW_PHP:1]
 RewriteRule ^home\?id=([a-zA-Z0-9]+)$ index.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
 
 # Dashboard routes with parameters
-RewriteRule ^dashboard/?$ student_dashboard.php [L,E=ALLOW_PHP:1]
-RewriteRule ^dashboard\?id=([a-zA-Z0-9]+)$ student_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
-RewriteRule ^dashboard/([a-zA-Z0-9]+)/?$ student_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^dashboard/?$ dashboard/student_dashboard.php [L,E=ALLOW_PHP:1]
+RewriteRule ^dashboard\?id=([a-zA-Z0-9]+)$ dashboard/student_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^dashboard/([a-zA-Z0-9]+)/?$ dashboard/student_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
 
-RewriteRule ^admin/?$ admin_dashboard.php [L,E=ALLOW_PHP:1]
-RewriteRule ^admin\?id=([a-zA-Z0-9]+)$ admin_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
-RewriteRule ^admin/([a-zA-Z0-9]+)/?$ admin_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^admin/?$ dashboard/admin_dashboard.php [L,E=ALLOW_PHP:1]
+RewriteRule ^admin\?id=([a-zA-Z0-9]+)$ dashboard/admin_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^admin/([a-zA-Z0-9]+)/?$ dashboard/admin_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
 
-RewriteRule ^instructor/?$ instructors_dashboard.php [L,E=ALLOW_PHP:1]
-RewriteRule ^instructor\?id=([a-zA-Z0-9]+)$ instructors_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
-RewriteRule ^instructor/([a-zA-Z0-9]+)/?$ instructors_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^instructor/?$ dashboard/instructors_dashboard.php [L,E=ALLOW_PHP:1]
+RewriteRule ^instructor\?id=([a-zA-Z0-9]+)$ dashboard/instructors_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
+RewriteRule ^instructor/([a-zA-Z0-9]+)/?$ dashboard/instructors_dashboard.php?id=$1 [L,QSA,E=ALLOW_PHP:1]
 
 # Profile routes with parameters
 RewriteRule ^profile/?$ apis/student_profile.php [L,E=ALLOW_PHP:1]
@@ -118,6 +118,13 @@ RewriteCond %{THE_REQUEST} admin_dashboard\.php [NC]
 RewriteRule ^admin_dashboard\.php$ /admin [R=301,L]
 RewriteCond %{THE_REQUEST} instructors_dashboard\.php [NC]
 RewriteRule ^instructors_dashboard\.php$ /instructor [R=301,L]
+# Redirect old root-level dashboard URLs to new dashboard folder
+RewriteCond %{THE_REQUEST} dashboard/student_dashboard\.php [NC]
+RewriteRule ^dashboard/student_dashboard\.php$ /dashboard [R=301,L]
+RewriteCond %{THE_REQUEST} dashboard/admin_dashboard\.php [NC]
+RewriteRule ^dashboard/admin_dashboard\.php$ /admin [R=301,L]
+RewriteCond %{THE_REQUEST} dashboard/instructors_dashboard\.php [NC]
+RewriteRule ^dashboard/instructors_dashboard\.php$ /instructor [R=301,L]
 
 
 # API routes with parameters
