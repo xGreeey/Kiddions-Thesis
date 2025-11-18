@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . '/security/session_config.php';
-require_once __DIR__ . '/security/cookies.php';
+require_once __DIR__ . '/../security/session_config.php';
+require_once __DIR__ . '/../security/cookies.php';
 
 // Debug: log logout request context
 error_log('LOGOUT: begin | sid=' . (session_id() ?: 'none') . ' | cookie_name=' . session_name() . ' | cookies=' . json_encode(array_keys($_COOKIE ?? [])));

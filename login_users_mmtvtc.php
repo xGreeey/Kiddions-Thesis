@@ -1,8 +1,8 @@
 <?php
-require_once 'security/session_config.php';
-require_once 'security/db_connect.php';
-require_once 'security/abuse_protection.php';
-require_once 'otpforusers/send_otp.php';
+require_once '../security/session_config.php';
+require_once '../security/db_connect.php';
+require_once '../security/abuse_protection.php';
+require_once '../otpforusers/send_otp.php';
 
 // Environment configuration
 if (getenv('APP_ENV') !== 'development') {
@@ -29,7 +29,7 @@ define('TURNSTILE_SECRET_KEY', '0x4AAAAAABmurA59GN__hvTiM_DfF71ofUs');
 
 // Security logging function
 function logSecurityEvent($event, $details) {
-    $logDir = 'logs';
+    $logDir = '../logs';
     if (!is_dir($logDir)) {
         mkdir($logDir, 0755, true);
     }
@@ -567,7 +567,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="icon" href="../images/logo.png" type="image/png">
     <title>MMTVTC Login</title>
     <!-- Use system fonts for strict CSP -->
     
@@ -1273,7 +1273,7 @@ try {
 
     <header class="navbar">
         <div class="brand">
-            <img src="images/manpower logo.jpg" alt="MMTVTC logo" />
+            <img src="../images/manpower logo.jpg" alt="MMTVTC logo" />
             <div>
                 <div style="font-size:14px; line-height:1; color:#cfd7e6;"></div>
                 <span>MMTVTC</span>
@@ -1314,7 +1314,7 @@ try {
 
             <!-- Login Container -->
             <div id="loginContainer" class="login-container">
-                <img src="assets/mmtvtc.png" alt="MMTVTC Logo" class="logo">
+                <img src="../assets/mmtvtc.png" alt="MMTVTC Logo" class="logo">
                 <h2>MMTVTC Login</h2>
                 
                 <?php if (isset($_SESSION['verified_success']) && $_SESSION['verified_success']): ?>
