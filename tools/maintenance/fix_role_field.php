@@ -6,9 +6,11 @@
  * instead of the correct 'is_role' field name.
  */
 
+$rootPath = dirname(__DIR__, 2);
+
 // Security check - only allow admin access
 session_start();
-require_once 'security/csp.php';
+require_once $rootPath . '/security/csp.php';
 if (!isset($_SESSION['is_role']) || $_SESSION['is_role'] != 2) {
     die('Access denied. Admin privileges required.');
 }
@@ -45,8 +47,9 @@ $filesToCheck = [
 $results = [];
 
 foreach ($filesToCheck as $file) {
-    if (file_exists($file)) {
-        $content = file_get_contents($file);
+    $fullPath = $rootPath . '/' . $file;
+    if (file_exists($fullPath)) {
+        $content = file_get_contents($fullPath);
         $hasUserRole = strpos($content, 'user_role') !== false;
         $hasIsRole = strpos($content, 'is_role') !== false;
         
@@ -81,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         }
         
         try {
-            $content = file_get_contents($file);
+            $content = file_get_contents($fullPath);
             
             // Replace common patterns
             $replacements = [
@@ -96,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
             }
             
             // Write back to file
-            file_put_contents($file, $newContent);
+            file_put_contents($fullPath, $newContent);
             
             echo json_encode([
                 'success' => true,

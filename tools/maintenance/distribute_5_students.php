@@ -1,5 +1,5 @@
 <?php
-require_once 'security/db_connect.php';
+require_once __DIR__ . '/../../security/db_connect.php';
 
 echo "<h2>Distribute 5 Students Across 4 Batches</h2>";
 echo "<pre>";
