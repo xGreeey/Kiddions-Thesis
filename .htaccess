@@ -104,9 +104,9 @@ RewriteRule ^EKtJkWrAVAsyyA4fbj1KOrcYulJ2Wu$ auth/login_users_mmtvtc.php [L,E=AL
 RewriteRule ^otp$ otpforusers/verify_email_otp.php [L,E=ALLOW_PHP:1]
 RewriteRule ^xVfS8QRMPpYRWvilIcyFLnKWgPy5Zw$ verify_email.php [L,E=ALLOW_PHP:1]
 RewriteRule ^vdbZscYYEJbqotvNnWlyA8I1gwfpcH$ email_verification_pending.php [L,E=ALLOW_PHP:1]
-RewriteRule ^aKVeZ02vR7CTx28Jylr5FVaRxVFHzg$ forgot_password.php [L,E=ALLOW_PHP:1]
-RewriteRule ^nsZLoj1b49kcshf6JhimM3Tvdn1rLK$ create_pass.php [L,E=ALLOW_PHP:1]
-RewriteRule ^resetpassword$ reset_pass.php [L,E=ALLOW_PHP:1]
+RewriteRule ^aKVeZ02vR7CTx28Jylr5FVaRxVFHzg$ auth/forgot_password.php [L,E=ALLOW_PHP:1]
+RewriteRule ^nsZLoj1b49kcshf6JhimM3Tvdn1rLK$ auth/create_pass.php [L,E=ALLOW_PHP:1]
+RewriteRule ^resetpassword$ auth/reset_pass.php [L,E=ALLOW_PHP:1]
 
 # Note: We no longer block direct .php access here to avoid false 403s on LiteSpeed.
 # Clean routes above will be preferred; direct .php access will still work if referenced.

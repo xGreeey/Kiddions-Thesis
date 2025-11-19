@@ -1,10 +1,10 @@
 <?php
 session_start();
-require_once 'security/db_connect.php';
-require_once 'session_config.php';
+require_once '../security/db_connect.php';
+require_once '../security/session_config.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $response = array('success' => false, 'message' => '');
