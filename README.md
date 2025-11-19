@@ -246,11 +246,27 @@ The system supports three main user roles:
 │   ├── db_connect.php
 │   ├── session_config.php
 │   └── ...
-├── admin_dashboard.php      # Admin interface
-├── instructors_dashboard.php # Instructor interface
-├── student_dashboard.php     # Student interface
+├── dashboard/               # Role-specific dashboards
+│   ├── admin_dashboard.php
+│   ├── instructors_dashboard.php
+│   └── student_dashboard.php
+├── auth/                    # Authentication + password flows
+│   ├── login_users_mmtvtc.php
+│   ├── logout.php
+│   ├── forgot_password.php
+│   ├── create_pass.php
+│   ├── reset_pass.php
+│   └── resend_reset.php
+├── tools/
+│   └── maintenance/         # Admin/maintenance utilities
+│       ├── grade_management.php
+│       ├── password_history_manager.php
+│       ├── sync_grades.php
+│       ├── fix_role_field.php
+│       ├── assign_test_batches.php
+│       ├── check_batch_distribution.php
+│       └── distribute_5_students.php
 ├── index.php                # Landing page
-├── login_users_mmtvtc.php   # Login handler
 ├── u485501277_mmtvtc.sql    # Database schema
 └── README.md                # This file
 ```
