@@ -5,8 +5,9 @@
  */
 
 session_start();
-require_once 'security/db_connect.php';
-require_once 'security/session_config.php';
+$rootPath = dirname(__DIR__, 2);
+require_once $rootPath . '/security/db_connect.php';
+require_once $rootPath . '/security/session_config.php';
 
 // Check if user is admin (adjust role check as needed)
 if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] != 1) {

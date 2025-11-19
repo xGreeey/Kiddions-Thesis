@@ -1,6 +1,6 @@
 <?php
 // Manual sync script to sync existing quiz/exam submissions to grade_details
-require_once 'security/db_connect.php';
+require_once __DIR__ . '/../../security/db_connect.php';
 
 echo "<h2>Sync Quiz/Exam Submissions to Grade Details</h2>";
 echo "<pre>";

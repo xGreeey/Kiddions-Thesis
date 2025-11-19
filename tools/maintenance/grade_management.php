@@ -1,10 +1,11 @@
 <?php
 session_start();
 error_reporting(E_ALL);
+$rootPath = dirname(__DIR__, 2);
 // Unified error display via security/error_handler.php
-require_once 'security/csp.php';
-require_once 'security/db_connect.php'; 
-require_once 'security/session_config.php';
+require_once $rootPath . '/security/csp.php';
+require_once $rootPath . '/security/db_connect.php'; 
+require_once $rootPath . '/security/session_config.php';
 
 // Grade Management Class
 class GradeManager {
@@ -325,7 +326,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <title>Grade Management System</title>
     <!-- Removed external Bootstrap CSS for stricter CSP. -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="CSS/instructor.css">
+    <link rel="stylesheet" href="../../CSS/instructor.css">
     <style>
         /* Additional CSS for grade management */
         .grade-management-section {
